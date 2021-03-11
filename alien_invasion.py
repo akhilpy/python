@@ -12,7 +12,7 @@ def run_game():
  shipdraw = ship(screen)
  while True:
     gf.check_events(shipdraw)
-    gf.update_screen(ai_settings,screen,ship)
+    gf.update_screen(ai_settings,screen,shipdraw)
     for event in pygame.event.get():
          
      if event.type == pygame.QUIT:
